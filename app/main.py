@@ -4,6 +4,9 @@ from app.routes.dashboard import router as dashboard_router
 from app.routes.jbs_grid import router as jbs_router
 from fastapi.middleware.cors import CORSMiddleware
 from app.database import connect_to_mongo
+from app.routes.saleyards import router as saleyards_router
+from app.routes.sales_data import router as sales_data_router
+from app.routes.saleyard_groups import router as saleyard_groups_router
 
 
 
@@ -24,6 +27,9 @@ app.add_middleware(
 app.include_router(health_router, prefix="/api")
 app.include_router(dashboard_router, prefix="/api")
 app.include_router(jbs_router, prefix="/api")
+app.include_router(saleyards_router, prefix="/api")
+app.include_router(sales_data_router, prefix="/api")
+app.include_router(saleyard_groups_router, prefix="/api")
 
 @app.get("/")
 def root():
