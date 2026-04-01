@@ -1,7 +1,13 @@
-from fastapi import FastAPI
+from pymongo import MongoClient
+from app.config import MONGO_URI
 
-app = FastAPI()
+client = None
+db = None
 
-@app.get("/")
-def root():
-    return {"message": "The Yarding backend is running"}
+def connect_to_mongo():
+    global client, db
+    client = MongoClient(MONGO_URI)
+    db = client["theyarding"]
+
+def get_db():
+    return db
