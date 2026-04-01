@@ -12,7 +12,7 @@ def get_jbs_grid():
             "dentition": "0-4",
             "butt": "A-C",
             "fat": "5-22mm",
-            "brooklyn": "$7.00",
+            "brooklyn": "$70.00",
             "scone": "$60.90"
         },
         {
