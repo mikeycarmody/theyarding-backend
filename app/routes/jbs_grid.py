@@ -13,7 +13,7 @@ def get_jbs_grid():
             "butt": "A-C",
             "fat": "5-22mm",
             "brooklyn": "$7.00",
-            "scone": "$6.90"
+            "scone": "$60.90"
         },
         {
             "week": 15,
