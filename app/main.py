@@ -30,6 +30,7 @@ app.include_router(jbs_router, prefix="/api")
 app.include_router(saleyards_router, prefix="/api")
 app.include_router(sales_data_router, prefix="/api")
 app.include_router(saleyard_groups_router, prefix="/api")
+app.include_router(upcoming_sales_router, prefix="/api")
 
 @app.get("/")
 def root():
