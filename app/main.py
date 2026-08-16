@@ -7,6 +7,7 @@ from app.database import connect_to_mongo
 from app.routes.saleyards import router as saleyards_router
 from app.routes.sales_data import router as sales_data_router
 from app.routes.saleyard_groups import router as saleyard_groups_router
+from app.routes.upcoming_sales import router as upcoming_sales_router
 
 
 
